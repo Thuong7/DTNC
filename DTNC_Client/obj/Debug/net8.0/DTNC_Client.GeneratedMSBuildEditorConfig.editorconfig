@@ -1,0 +1,127 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = DTNC_Client
+build_property.RootNamespace = DTNC_Client
+build_property.ProjectDir = F:\DTNC\DTNC_Client\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = F:\DTNC\DTNC_Client
+build_property._RazorSourceGeneratorDebug = 
+
+[F:/DTNC/DTNC_Client/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/DTNC/DTNC_Client/Pages/Admin/CreateFood.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQ3JlYXRlRm9vZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/DTNC/DTNC_Client/Pages/Admin/CreateUser.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQ3JlYXRlVXNlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/DTNC/DTNC_Client/Pages/Admin/Deleteuser.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRGVsZXRldXNlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/DTNC/DTNC_Client/Pages/Admin/EditFood.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRWRpdEZvb2QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/DTNC/DTNC_Client/Pages/Admin/Edituser.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRWRpdHVzZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/DTNC/DTNC_Client/Pages/Admin/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/DTNC/DTNC_Client/Pages/Admin/MainLayoutAdmin.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cTWFpbkxheW91dEFkbWluLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/DTNC/DTNC_Client/Pages/Admin/Product.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUHJvZHVjdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/DTNC/DTNC_Client/Pages/Admin/UserList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cVXNlckxpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/DTNC/DTNC_Client/Pages/Config/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29uZmlnXENvdW50ZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/DTNC/DTNC_Client/Pages/Config/FetchData.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29uZmlnXEZldGNoRGF0YS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/DTNC/DTNC_Client/Pages/Config/RedirectLogin.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29uZmlnXFJlZGlyZWN0TG9naW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/DTNC/DTNC_Client/Pages/Guests/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR3Vlc3RzXEhvbWUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/DTNC/DTNC_Client/Pages/Guests/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR3Vlc3RzXEluZGV4LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/DTNC/DTNC_Client/Pages/Guests/Product.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR3Vlc3RzXFByb2R1Y3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/DTNC/DTNC_Client/Pages/Guests/Signin.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR3Vlc3RzXFNpZ25pbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/DTNC/DTNC_Client/Pages/Guests/SigninLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR3Vlc3RzXFNpZ25pbkxheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/DTNC/DTNC_Client/Pages/User/Edituser.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclxFZGl0dXNlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/DTNC/DTNC_Client/Pages/User/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclxJbmRleC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/DTNC/DTNC_Client/Shared/MainLayoutAdmin.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXRBZG1pbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/DTNC/DTNC_Client/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/DTNC/DTNC_Client/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/DTNC/DTNC_Client/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-43buvcpx1e
+
+[F:/DTNC/DTNC_Client/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-a4tgv0u26o
+
+[F:/DTNC/DTNC_Client/Pages/Config/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29uZmlnXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/DTNC/DTNC_Client/Pages/Config/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29uZmlnXF9Ib3N0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 

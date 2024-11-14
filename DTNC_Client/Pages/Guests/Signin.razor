@@ -1,0 +1,269 @@
+﻿@page "/signin"
+@layout SigninLayout
+@inject HttpClient Http
+@inject NavigationManager Navigation
+@inject AuthenticationStateProvider AuthStateProvider
+@inject IJSRuntime JS
+@using System.IdentityModel.Tokens.Jwt
+<style>
+    body {
+        padding: 0;
+        margin: 0;
+        background-color: rgb(230, 230, 230);
+    }
+
+    .container {
+        width: 500px;
+        height: 100%;
+        display: flex;
+        margin: 0 auto;
+        background-color: #fff;
+        border: none;
+        border-radius: 10px;
+        margin-top: 50px;
+        justify-content: center;
+        font-family: TTNormsProRegular, MyriadRegular, Segoe UI, Arial, PingFang TC, Microsoft JhengHei, sans-serif;
+    }
+
+    .header-lg {
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 7%;
+    }
+
+        .header-lg a {
+            text-align: center;
+        }
+
+            .header-lg a img {
+                padding-top: 10px;
+                width: 100px;
+            }
+
+        .header-lg span {
+            text-align: center;
+            font-size: 30px;
+            font-weight: bolder;
+        }
+
+    .form-input {
+        padding-left: 25px;
+        display: flex;
+        flex-direction: column;
+    }
+
+        .form-input span {
+            font-size: 20px;
+            padding-bottom: 10px;
+        }
+
+        .form-input input {
+            font-size: 13px;
+            height: 40px;
+            width: 450px;
+            padding-left: 10px;
+            border-radius: 10px;
+            border: 1px solid #cccc;
+        }
+
+    .form-check {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 25px;
+        padding-right: 25px;
+        font-size: 17px;
+    }
+
+        .form-check div {
+            display: flex;
+        }
+
+            .form-check div input {
+                margin-top: 18px;
+                margin-right: 5px;
+                height: 15px;
+                width: 15px;
+            }
+
+        .form-check a {
+            padding-top: 15px;
+            text-decoration: none;
+            color: #006ce1;
+        }
+
+    .btn-login {
+        margin-top: 20px;
+        height: 40px;
+        width: 450px;
+        margin-left: 25px;
+        border-radius: 10px;
+        border: 1px solid #cccc;
+        font-size: 18px;
+        color: white;
+        background-color: #006ce1;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+
+        .btn-login:hover {
+            background-color: #045bb8;
+        }
+
+    .question {
+        text-align: center;
+        font-size: 15px;
+    }
+
+        .question a {
+            text-decoration: none;
+            color: #006ce1;
+        }
+
+    .or {
+        padding-top: 20px;
+    }
+
+    label {
+        padding-top: 15px;
+    }
+
+    .or div {
+        text-align: center;
+        display: flex;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    hr {
+        width: 120px;
+        border: none;
+        border-top: 2px solid #ccc;
+    }
+
+    .icon {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 40px;
+        padding-top: 20px;
+    }
+
+        .icon i {
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 40px;
+            color: black;
+        }
+
+</style>
+<div class="container">
+    <div>
+        <div class="header-lg">
+            <span>Đăng nhập</span>
+        </div>
+        <EditForm Model="@loginModel" OnValidSubmit="HandleLogin">
+            <DataAnnotationsValidator />
+            <ValidationSummary />
+
+            <div class="form-input">
+                <span>Tài khoản</span>
+                <InputText id="username" @bind-Value="loginModel.Username" class="form-control" placeholder="Nhập tài khoản của bạn" />
+                <ValidationMessage For="@(() => loginModel.Username)" />
+            </div>
+            <div class="form-input">
+                <span>Mật khẩu</span>
+                <InputText id="password" @bind-Value="loginModel.Password" type="password" class="form-control" placeholder="Nhập mật khẩu của bạn" />
+                <ValidationMessage For="@(() => loginModel.Password)" />
+            </div>
+            <div class="form-check">
+                <div>
+                    <InputCheckbox id="remember" @bind-Value="rememberMe" /> <label for="remember">Nhớ tôi</label>
+                </div>
+                <a href="">Quên mật khẩu?</a>
+            </div>
+            <button type="submit" class="btn-login">Đăng nhập</button>
+            <div class="question">
+                <span>Bạn chưa có tài khoản?</span>
+                <a href="">Đăng ký ngay</a>
+            </div>
+            <div class="or">
+                <div>
+                    <hr />
+                    <span>Hoặc đăng nhập với</span>
+                    <hr />
+                </div>
+                <div class="icon">
+                    <a href="#"><i class="fab fa-facebook" style="color: #006ce1;"></i></a>
+                    <a href="#"><i class="fab fa-google"></i></a>
+                </div>
+            </div>
+        </EditForm>
+    </div>
+</div>
+
+@code {
+    private LoginModel loginModel = new LoginModel();
+    private bool rememberMe;
+
+    @inject CustomAuthStateProvider AuthStateProvider
+
+    private async Task HandleLogin()
+    {
+        try
+        {
+            var response = await Http.PostAsJsonAsync("https://localhost:7193/api/Users/login-api", loginModel);
+            if (!response.IsSuccessStatusCode)
+            {
+                var errorData = await response.Content.ReadFromJsonAsync<ErrorResponse>();
+                throw new Exception(errorData.Message);
+            }
+            var responseData = await response.Content.ReadFromJsonAsync<LoginResponse>();
+            Console.WriteLine("Success:", responseData);
+            Console.WriteLine($"Token: {responseData.Token}");
+            await JS.InvokeVoidAsync("localStorage.setItem", "token", responseData.Token);
+
+            AuthStateProvider.NotifyUserAuthentication(responseData.Token);
+
+            var handler = new JwtSecurityTokenHandler();
+            var jsonToken = handler.ReadToken(responseData.Token) as JwtSecurityToken;
+
+            var role = jsonToken?.Claims.FirstOrDefault(claim => claim.Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/role")?.Value;
+           var username = jsonToken.Claims.FirstOrDefault(claim => claim.Type == JwtRegisteredClaimNames.Sub)?.Value;
+            Console.WriteLine($"Role: {role}");
+            Console.WriteLine($"admin?:{username}");
+            if (role == "admin")
+            {
+                Navigation.NavigateTo("/admindashboard");
+            }
+            else
+            {
+                Navigation.NavigateTo("/");
+            }
+
+           
+           
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Error:", ex);
+        }
+    }
+
+    public class LoginModel
+    {
+        public string Username { get; set; }
+        public string Password { get; set; }
+    }
+
+    public class ErrorResponse
+    {
+        public string Message { get; set; }
+    }
+
+    public class LoginResponse
+    {
+        public string Token { get; set; }
+    }
+}

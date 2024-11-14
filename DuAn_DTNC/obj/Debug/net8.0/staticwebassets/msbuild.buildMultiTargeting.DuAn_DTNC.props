@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\DuAn_DTNC.props" />
+</Project>

@@ -1,0 +1,52 @@
+﻿@page "/product"
+@using DuAn_DTNC.Models
+@using DuAn_DTNC.Services
+@inject CartService CartService
+
+@inject HttpClient Http
+
+@code {
+    private List<FoodItem>? foodItems;
+
+    protected override async Task OnInitializedAsync()
+    {
+        foodItems = await Http.GetFromJsonAsync<List<FoodItem>>("https://localhost:7193/api/Food");
+    }
+
+    private async Task AddToCart(FoodItem item)
+    {
+        Console.WriteLine("Loi");
+        await CartService.AddToCart(item);
+    }
+}
+@if(foodItems == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <section class="list-product">
+        <div class="list-product-title">
+            <hr class="left" />
+            <span>Danh mục món</span>
+            <hr class="right" />
+            <a href="#">Xem tất cả >></a>
+        </div>
+        <div class="flex-product">
+            @foreach (var item in foodItems)
+            {
+                <div class="product">
+                    <img src="@item.ImageUrl" alt="@item.Name">
+                    <a href="#" class="name-product">@item.Name</a>
+                    <hr>
+                    <p class="price">@item.Price.ToString("N0") vnđ</p>
+                    <hr>
+                    <p class="if-prd">@item.Category</p>
+                    <p class="if-prd">@item.Description</p>
+                    <button class="btnaddcratf" type="button" @onclick="async () => await AddToCart(item)">Thêm vào giỏ hàng</button>
+                    <a class="button" href="createfood">Chi tiết sản phẩm</a>
+                </div>
+            }
+        </div>
+    </section>
+}

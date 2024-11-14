@@ -1,0 +1,84 @@
+﻿@page "/editfooditem/{id:int}"
+@using DuAn_DTNC.Models
+@layout MainLayoutAdmin
+@attribute [Authorize(Roles = "admin")]
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JS
+
+<h3>Edit Food Item</h3>
+
+<EditForm Model="editingFoodItem" OnValidSubmit="HandleSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="form-group">
+        <label for="name">Name</label>
+        <InputText id="name" class="form-control" @bind-Value="editingFoodItem.Name" />
+    </div>
+    <div class="form-group">
+        <label for="description">Description</label>
+        <InputText id="description" class="form-control" @bind-Value="editingFoodItem.Description" />
+    </div>
+    <div class="form-group">
+        <label for="price">Price</label>
+        <InputNumber id="price" class="form-control" @bind-Value="editingFoodItem.Price" />
+    </div>
+    <div class="form-group">
+        <label for="category">Category</label>
+        <InputText id="category" class="form-control" @bind-Value="editingFoodItem.Category" />
+    </div>
+    <div class="form-group">
+        <label for="imageUrl">Image URL</label>
+        <InputText id="imageUrl" class="form-control" @bind-Value="editingFoodItem.ImageUrl" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Update Food Item</button>
+    <button type="button" class="btn btn-secondary" @onclick="Cancel">Cancel</button>
+</EditForm>
+
+@code {
+    [Parameter] public int Id { get; set; }
+    private FoodItem editingFoodItem = new FoodItem();
+
+    protected override async Task OnInitializedAsync()
+    {
+        var token = await JS.InvokeAsync<string>("localStorage.getItem", "token");
+        if (!string.IsNullOrEmpty(token))
+        {
+            Http.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
+            var response = await Http.GetAsync($"https://localhost:7193/api/FoodItems/{Id}");
+            if (response.IsSuccessStatusCode)
+            {
+                editingFoodItem = await response.Content.ReadFromJsonAsync<FoodItem>();
+            }
+            else
+            {
+                Console.WriteLine($"Error: {response.StatusCode}");
+            }
+        }
+    }
+
+    private async Task HandleSubmit()
+    {
+        var token = await JS.InvokeAsync<string>("localStorage.getItem", "token");
+        if (!string.IsNullOrEmpty(token))
+        {
+            Http.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
+            var response = await Http.PutAsJsonAsync($"https://localhost:44391/api/FoodItems/{Id}", editingFoodItem);
+            if (response.IsSuccessStatusCode)
+            {
+                NavigationManager.NavigateTo("/listfood");
+            }
+            else
+            {
+                Console.WriteLine($"Error: {response.StatusCode}");
+            }
+        }
+    }
+
+    private void Cancel()
+    {
+        NavigationManager.NavigateTo("/listfood");
+    }
+}

@@ -1,0 +1,809 @@
+body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: TTNormsProRegular, MyriadRegular, Segoe UI, Arial, PingFang TC, Microsoft JhengHei, sans-serif;
+}
+
+.header {
+    height: 56px;
+    padding: 0 16px;
+    display: flexbox;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+    .header img {
+        height: 40px;
+        max-width: 100%;
+    }
+
+.logo {
+    display: flexbox;
+    display: flex;
+    flex-direction: row;
+}
+
+    .logo button {
+        margin-right: 8px;
+        border: none;
+        font-size: 25px;
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+        background-color: #fff;
+    }
+
+.searchbox {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 0 40px;
+    padding: 0 350px;
+    flex: 1;
+    flex-basis: 0.000000001px;
+}
+
+    .searchbox input {
+        height: 40px;
+        width: 350px;
+        border: 1px solid #cccccc;
+        border-right: none;
+        border-radius: 40px 0 0 40px;
+        padding-left: 15px;
+    }
+
+    .searchbox button {
+        border: 1px solid #cccccc;
+        background-color: #f8f8f8;
+        border-radius: 0 40px 40px 0;
+        cursor: pointer;
+        height: 40px;
+        width: 64px;
+        margin: 0;
+    }
+
+.account {
+    display: flex;
+}
+
+    .account a {
+        font-size: 25px;
+        line-height: 45px;
+        padding-right: 10px;
+    }
+
+    .account button {
+        background-color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+        .account button i {
+            line-height: 40px;
+            padding-right: 40px;
+            font-size: 25px;
+        }
+
+        .account button p {
+            font-size: 15px;
+            line-height: 10px;
+        }
+
+.content {
+    display: flex;
+}
+
+.navbar {
+    background-color: #fff;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+.nav-item {
+    margin-right: 80px;
+    border-right: 2px solid #cccc;
+    height: 40px;
+    width: 100%;
+    text-align: left;
+    font-size: 1.02rem;
+    color: rgb(78, 77, 77);
+    line-height: 1rem;
+    flex: 1;
+    position: relative;
+}
+
+.navbar ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.nav-item a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+    padding-left: 20px;
+    padding-bottom: 13px;
+    padding-top: 10px;
+}
+
+    .nav-item a i {
+        width: 20px;
+        margin-right: 10px;
+    }
+
+@media (max-width: 736px) {
+    .navbar {
+        width: 100%;
+        height: auto;
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #fff;
+        z-index: 1000;
+    }
+
+        .navbar.show {
+            display: flex;
+            flex-direction: column;
+        }
+
+    .nav-item {
+        border-right: none;
+        border-bottom: 1px solid #cccc;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        flex: initial;
+    }
+}
+
+.navbar-lite {
+    background-color: #fff;
+    width: 4%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+    .navbar-lite ul {
+        list-style: none;
+        padding-left: 0px;
+    }
+
+    .navbar-lite.hidden {
+        display: none;
+    }
+
+.nav-item:hover {
+    background-color: rgb(78, 77, 77);
+    border-radius: 10px;
+    color: #fff;
+}
+
+.icon-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    height: 40px;
+    padding-right: 3%;
+    background-color: #cccc;
+}
+
+    .icon-info a {
+        color: rgb(78, 77, 77);
+        font-size: 25px;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+
+.info-list {
+    border-top: 1px solid rgb(174, 174, 174);
+    justify-content: space-between;
+    padding-left: 3%;
+    padding-right: 1%;
+    display: flex;
+    flex-direction: row;
+    height: 250px;
+    background-color: #dddadacc;
+}
+
+    .info-list img {
+        padding-top: 50px;
+        width: 250px;
+    }
+
+    .info-list div {
+        padding-top: 40px;
+        display: flex;
+        flex-direction: column;
+    }
+
+        .info-list div p {
+            font-size: 13px;
+            padding-bottom: 2px;
+            padding-left: 10px;
+            border-left: 1px solid #cccc;
+        }
+
+.main, main-admin {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    background-color: #f7f4f4;
+}
+
+.slide {
+    display: none;
+    max-width: 100%;
+}
+
+    .slide img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+.slide-show {
+    padding-top: 10px;
+    padding-left: 1%;
+    display: block;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.slideshow-container {
+    max-width: 100%;
+    height: 475px;
+}
+
+.new-product {
+    height: 600px;
+}
+
+.title {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+    .title hr {
+        display: block;
+        border: none;
+        border-top: 2px solid #ccc;
+        margin: 1em;
+        padding: 0;
+        height: 1px;
+        width: 30%;
+    }
+
+    .title span {
+        padding-bottom: 20px;
+        font-size: 25px;
+        line-height: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-weight: bolder;
+    }
+
+.n-prd {
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+}
+
+    .n-prd a {
+        transition: transform .2s;
+    }
+
+        .n-prd a img {
+            padding-top: 10px;
+            height: 250px;
+        }
+
+.n-prd-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.n-prd a:hover {
+    transform: scale(1.1);
+}
+
+.news {
+    height: 200px;
+}
+
+.list-product {
+    padding-top: 20px;
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
+
+.list-product-title {
+    display: flex;
+    flex-direction: row;
+}
+
+.list-product span {
+    line-height: 45px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.left {
+    margin-left: 2%;
+    margin-right: 10px;
+    margin-top: 22px;
+    width: 30px;
+    border: none;
+    border-top: 2px solid #ccc;
+    padding: 0;
+    height: 1px;
+}
+
+.right {
+    margin-right: 2%;
+    width: 925px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    padding: 0;
+    height: 1px;
+    margin-left: 10px;
+    margin-top: 22px;
+}
+
+.list-product-title a {
+    text-decoration: none;
+    color: black;
+    line-height: 48px;
+}
+
+    .list-product-title a:hover {
+        color: rgb(255, 77, 0);
+        text-decoration: solid rgb(255, 77, 0);
+    }
+
+.product {
+    background-color: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 3%;
+    padding-left: 3%;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 190px;
+    height: auto;
+    margin-left: 1%;
+    margin-right: 2%;
+}
+
+    .product img {
+        width: 190px;
+        height: 143px;
+    }
+
+.name-product {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+
+.price {
+    margin-top: -5px;
+    font-weight: bolder;
+    font-size: 16px;
+    text-align: start;
+}
+
+.product hr {
+    margin-top: -10px;
+    width: 190px;
+    border: none;
+    border-top: 2px solid #ccc;
+    height: 1px;
+}
+
+.if-prd {
+    font-size: 14px;
+    list-style-type: circle;
+    margin-top: 0px;
+}
+
+.flex-product {
+    margin-left: 3%;
+    margin-right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.product {
+    flex: 1 1 calc(20% - 1rem); /* 25% width minus margin */
+    margin: 0.5rem; /* Adjust margin as needed */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+.product-button {
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bolder;
+    color: #0051a8;
+    background-color: white;
+    border: 1px solid #0051a8;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.product button:hover {
+    background-color: #0051a8;
+    color: white;
+}
+
+.cart {
+    padding-top: 20px;
+}
+
+.cart-title {
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+}
+
+    .cart-title span {
+        font-size: 25px;
+        line-height: 40px;
+        font-weight: bolder;
+    }
+
+.cart-list {
+    background-color: white;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cart-checkbox {
+    width: 50px;
+    height: 50px;
+}
+
+.cart-name {
+    width: 600px;
+    margin-left: 120px;
+}
+
+.cart-name-flex {
+    padding-left: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+    .cart-name-flex img {
+        width: 60px;
+        height: 60px;
+    }
+
+.cart-sl {
+    padding-right: 100px;
+    padding-left: 100px;
+    text-align: center;
+}
+
+    .cart-sl div {
+        padding-top: 15px;
+        display: flex;
+        flex-direction: row;
+    }
+
+#decreaseBtn, #increaseBtn {
+    width: 30px;
+    height: 30px;
+}
+
+#counter {
+    line-height: 30px;
+    margin-top: 0px;
+    width: 40px;
+    height: 30px;
+}
+
+tbody {
+    text-align: center;
+}
+
+.cart-list table tr td {
+    border-bottom: 1px soild #cccc;
+}
+
+tr {
+    border-collapse: collapse;
+    border-bottom: 1px solid #cccc;
+    margin-bottom: 10px;
+}
+
+.pay {
+    font-weight: 500;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 40px;
+    height: 100px;
+    max-width: 100%;
+    background-color: #fff;
+}
+
+.user {
+    display: flex;
+    flex-direction: row;
+}
+
+.list-user {
+    width: 67%;
+    background-color: #eeededcc;
+    height: auto;
+    padding-left: 1rem;
+}
+
+.aside {
+    border-left: 1px solid #cccc;
+    border-top: 1px solid #cccc;
+    background-color: #ffff;
+    width: 33%;
+    height: auto;
+}
+
+    .aside form {
+        display: flex;
+        flex-direction: column;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+.input-user {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+}
+
+.aside div span {
+    padding-bottom: 0.5rem;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.aside div input {
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid #cccc;
+}
+
+.aside h2 {
+    text-align: center;
+}
+
+.btn-modyfi {
+    padding-top: 3rem;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 5rem;
+}
+
+    .btn-modyfi button {
+        height: 40px;
+        width: 40%;
+        border: 2px solid #0051a8;
+        background-color: #fff;
+        color: #0051a8;
+        font-size: 15px;
+        font-weight: bolder;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+
+        .btn-modyfi button:hover {
+            color: #fff;
+            background-color: #0051a8;
+        }
+
+.list-user table {
+    font-size: 17px;
+    max-width: 100%;
+}
+
+    .list-user table tr th {
+        font-size: 16px;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .list-user table tr td {
+        padding-top: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        border-bottom: 1px solid #cccc;
+        padding-bottom: 1rem;
+        font-size: 15px;
+    }
+
+.list-user h2 {
+    padding-left: 1rem;
+}
+
+.pen {
+    text-decoration: none;
+    color: black;
+}
+
+.trash {
+    text-decoration: none;
+    color: rgb(204, 3, 3);
+    padding-left: 1rem;
+}
+
+.dc {
+    max-width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.detail {
+    padding-top: 2rem;
+    margin-left: 10rem;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2rem;
+}
+
+.detail-info {
+    margin-left: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+    .detail-info input {
+        border: 1px solid #cccc;
+        border-radius: 0.5rem;
+        height: 2rem;
+        width: 30rem;
+        margin-bottom: 1rem;
+    }
+
+    .detail-info div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+        .detail-info div button {
+            height: 40px;
+            width: 40%;
+            border: 2px solid #0051a8;
+            background-color: #fff;
+            color: #0051a8;
+            font-size: 15px;
+            font-weight: bolder;
+            cursor: pointer;
+            margin-left: 1rem;
+            border-radius: 10px;
+        }
+
+            .detail-info div button:hover {
+                color: #fff;
+                background-color: #0051a8;
+            }
+
+.add-title {
+    padding-left: 5rem;
+    padding-top: 2rem;
+}
+
+#addUserForm {
+    width: 40%;
+    padding-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+}
+
+    #addUserForm div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+        #addUserForm div input {
+            height: 30px;
+            border-radius: 10px;
+            border: 1px solid #cccc;
+        }
+
+        #addUserForm div span {
+            padding-bottom: 0.5rem;
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+    #addUserForm button {
+        height: 40px;
+        width: 100%;
+        border: 2px solid #0051a8;
+        background-color: #fff;
+        color: #0051a8;
+        font-size: 15px;
+        font-weight: bolder;
+        cursor: pointer;
+        border-radius: 10px;
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+    }
+
+        #addUserForm button:hover {
+            color: #fff;
+            background-color: #0051a8;
+        }
+
+.btnaddcratf {
+    background-color: #efefef;
+    border: 1px solid black;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 15px;
+    padding: 3px;
+    border-radius: 10px;
+}

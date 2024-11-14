@@ -1,0 +1,99 @@
+﻿@inherits LayoutComponentBase
+@inject IJSRuntime JS
+
+<div>
+    <div class="header">
+        <div class="logo">
+            <button type="button" class="menu-toggle" @onclick="ToggleNavbar">
+                <i class="fa-solid fa-bars" style="color: #cccccc;"></i>
+            </button>
+            <a href="#"><img src="https://logo.com/image-cdn/images/kts928pd/production/b374a124fc505ab3255fadae257d90e8e4a4855e-449x432.png?w=1080&q=72&fm=webp" alt=""></a>
+        </div>
+        <EditForm Model="searchModel" OnValidSubmit="OnSearch">
+            <div class="searchbox">
+                <InputText type="search" @bind-Value="searchModel.SearchText" placeholder="Tìm kiếm ... " />
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </EditForm>
+        <div class="account">
+            <NavLink href="cart">
+                <i class="fa-solid fa-cart-shopping" style="color: rgb(78, 77, 77);"></i>
+            </NavLink>
+            <button type="button" @onclick="NavigateToLogin">
+                <i class="fa-regular fa-user" style="color: rgb(78, 77, 77);"></i>
+            </button>
+        </div>
+    </div>
+    <div class="content">
+        <nav class="navbar">
+            <ul class="navbar-nav">
+                <li class="nav-item"><NavLink href="home"><i class="fa-solid fa-house"></i>Trang Chủ</NavLink></li>
+                <li class="nav-item"><NavLink href="pr"><i class="fa-solid fa-circle-info"></i>Giới thiệu</NavLink></li>
+                <li class="nav-item"><NavLink href="listfood"><i class="fa-solid fa-tags"></i>Sản Phẩm</NavLink></li>
+                <li class="nav-item"><NavLink href="cart"><i class="fa-solid fa-cart-shopping"></i>Giỏ hàng</NavLink></li>
+                <li class="nav-item"><NavLink href="#"><i class="fa-solid fa-users-gear"></i>Dịch Vụ</NavLink></li>
+                <li class="nav-item"><NavLink href="userslist"><i class="fa-solid fa-user"></i>Tài khoản</NavLink></li>
+                <li class="nav-item"><NavLink href="#"><i class="fa-solid fa-phone"></i>Liên Hệ</NavLink></li>
+            </ul>
+        </nav>
+        <nav class="navbar-lite">
+            <ul class="navbar-nav">
+                <li class="nav-item"><NavLink href="home"><i class="fa-solid fa-house"></i></NavLink></li>
+                <li class="nav-item"><NavLink href="pr"><i class="fa-solid fa-circle-info"></i></NavLink></li>
+                <li class="nav-item"><NavLink href="listfood"><i class="fa-solid fa-tags"></i></NavLink></li>
+                <li class="nav-item"><NavLink href="cart"><i class="fa-solid fa-cart-shopping"></i></NavLink></li>
+                <li class="nav-item"><NavLink href="#"><i class="fa-solid fa-users-gear"></i></NavLink></li>
+                <li class="nav-item"><NavLink href="userslist"><i class="fa-solid fa-user"></i></NavLink></li>
+                <li class="nav-item"><NavLink href="#"><i class="fa-solid fa-phone"></i></NavLink></li>
+            </ul>
+        </nav>
+        <article class="main-admin">
+            @Body
+        </article>
+    </div>
+    <footer>
+        <div class="icon-info">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+            <a href=""><i class="fa-brands fa-tiktok"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-google"></i></a>
+        </div>
+        <div class="info-list">
+            <img src="image/logo.png" alt="">
+            <div>
+                <p>Công Ty TNHH Công Nghệ Asus (Việt Nam)</p>
+                <p>Địa chỉ: 285 Cách Mạng Tháng Tám, Phường 12, Quận 10, Thành phố Hồ Chí Minh, Việt Nam </p>
+                <p>Giấy chứng nhận đăng ký doanh nghiệp số 0304965680 do Sở Kế hoạch và Đầu tư và Thành phố Hồ Chí Minh cấp ngày 03/05/2007. </p>
+                <p>Điện thoại: 1800 65 88</p>
+            </div>
+        </div>
+    </footer>
+</div>
+
+@code {
+    private SearchModel searchModel = new SearchModel();
+
+    private void OnSearch()
+    {
+
+    }
+
+    private void NavigateToLogin()
+    {
+        NavigationManager.NavigateTo("login");
+    }
+    private async Task ToggleNavbar()
+    {
+        await JS.InvokeVoidAsync("toggleNavbar");
+    }
+
+    [Inject]
+    private NavigationManager NavigationManager { get; set; }
+
+    public class SearchModel
+    {
+        public string SearchText { get; set; }
+    }
+}

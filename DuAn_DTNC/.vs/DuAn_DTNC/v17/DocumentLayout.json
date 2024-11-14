@@ -1,0 +1,881 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\DTNC\\DuAn_DTNC\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{735938EB-A477-484B-B4A8-E7DDA8058757}|..\\DTNC_Client\\DTNC_Client.csproj|f:\\dtnc\\dtnc_client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{735938EB-A477-484B-B4A8-E7DDA8058757}|..\\DTNC_Client\\DTNC_Client.csproj|f:\\dtnc\\dtnc_client\\providers\\customauthentication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06ACD656-74FB-4E0D-9696-42C154E06945}|DuAn_DTNC.csproj|f:\\dtnc\\duan_dtnc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06ACD656-74FB-4E0D-9696-42C154E06945}|DuAn_DTNC.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06ACD656-74FB-4E0D-9696-42C154E06945}|DuAn_DTNC.csproj|f:\\dtnc\\duan_dtnc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{06ACD656-74FB-4E0D-9696-42C154E06945}|DuAn_DTNC.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06ACD656-74FB-4E0D-9696-42C154E06945}|DuAn_DTNC.csproj|f:\\dtnc\\duan_dtnc\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06ACD656-74FB-4E0D-9696-42C154E06945}|DuAn_DTNC.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06ACD656-74FB-4E0D-9696-42C154E06945}|DuAn_DTNC.csproj|f:\\dtnc\\duan_dtnc\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06ACD656-74FB-4E0D-9696-42C154E06945}|DuAn_DTNC.csproj|solutionrelative:models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06ACD656-74FB-4E0D-9696-42C154E06945}|DuAn_DTNC.csproj|f:\\dtnc\\duan_dtnc\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06ACD656-74FB-4E0D-9696-42C154E06945}|DuAn_DTNC.csproj|solutionrelative:models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06ACD656-74FB-4E0D-9696-42C154E06945}|DuAn_DTNC.csproj|f:\\dtnc\\duan_dtnc\\models\\logintoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06ACD656-74FB-4E0D-9696-42C154E06945}|DuAn_DTNC.csproj|solutionrelative:models\\logintoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06ACD656-74FB-4E0D-9696-42C154E06945}|DuAn_DTNC.csproj|f:\\dtnc\\duan_dtnc\\models\\fooditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06ACD656-74FB-4E0D-9696-42C154E06945}|DuAn_DTNC.csproj|solutionrelative:models\\fooditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06ACD656-74FB-4E0D-9696-42C154E06945}|DuAn_DTNC.csproj|f:\\dtnc\\duan_dtnc\\models\\dtncdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06ACD656-74FB-4E0D-9696-42C154E06945}|DuAn_DTNC.csproj|solutionrelative:models\\dtncdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06ACD656-74FB-4E0D-9696-42C154E06945}|DuAn_DTNC.csproj|f:\\dtnc\\duan_dtnc\\models\\combofooditems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06ACD656-74FB-4E0D-9696-42C154E06945}|DuAn_DTNC.csproj|solutionrelative:models\\combofooditems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06ACD656-74FB-4E0D-9696-42C154E06945}|DuAn_DTNC.csproj|f:\\dtnc\\duan_dtnc\\models\\combo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06ACD656-74FB-4E0D-9696-42C154E06945}|DuAn_DTNC.csproj|solutionrelative:models\\combo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06ACD656-74FB-4E0D-9696-42C154E06945}|DuAn_DTNC.csproj|f:\\dtnc\\duan_dtnc\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06ACD656-74FB-4E0D-9696-42C154E06945}|DuAn_DTNC.csproj|solutionrelative:controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06ACD656-74FB-4E0D-9696-42C154E06945}|DuAn_DTNC.csproj|f:\\dtnc\\duan_dtnc\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06ACD656-74FB-4E0D-9696-42C154E06945}|DuAn_DTNC.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06ACD656-74FB-4E0D-9696-42C154E06945}|DuAn_DTNC.csproj|f:\\dtnc\\duan_dtnc\\controllers\\tokencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06ACD656-74FB-4E0D-9696-42C154E06945}|DuAn_DTNC.csproj|solutionrelative:controllers\\tokencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06ACD656-74FB-4E0D-9696-42C154E06945}|DuAn_DTNC.csproj|f:\\dtnc\\duan_dtnc\\controllers\\orderitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06ACD656-74FB-4E0D-9696-42C154E06945}|DuAn_DTNC.csproj|solutionrelative:controllers\\orderitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06ACD656-74FB-4E0D-9696-42C154E06945}|DuAn_DTNC.csproj|f:\\dtnc\\duan_dtnc\\controllers\\fooditemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06ACD656-74FB-4E0D-9696-42C154E06945}|DuAn_DTNC.csproj|solutionrelative:controllers\\fooditemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06ACD656-74FB-4E0D-9696-42C154E06945}|DuAn_DTNC.csproj|f:\\dtnc\\duan_dtnc\\controllers\\foodcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06ACD656-74FB-4E0D-9696-42C154E06945}|DuAn_DTNC.csproj|solutionrelative:controllers\\foodcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06ACD656-74FB-4E0D-9696-42C154E06945}|DuAn_DTNC.csproj|f:\\dtnc\\duan_dtnc\\controllers\\comboescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06ACD656-74FB-4E0D-9696-42C154E06945}|DuAn_DTNC.csproj|solutionrelative:controllers\\comboescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{735938EB-A477-484B-B4A8-E7DDA8058757}|..\\DTNC_Client\\DTNC_Client.csproj|f:\\dtnc\\dtnc_client\\pages\\user\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{735938EB-A477-484B-B4A8-E7DDA8058757}|..\\DTNC_Client\\DTNC_Client.csproj|f:\\dtnc\\dtnc_client\\pages\\user\\edituser.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{735938EB-A477-484B-B4A8-E7DDA8058757}|..\\DTNC_Client\\DTNC_Client.csproj|f:\\dtnc\\dtnc_client\\pages\\guests\\signinlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{735938EB-A477-484B-B4A8-E7DDA8058757}|..\\DTNC_Client\\DTNC_Client.csproj|f:\\dtnc\\dtnc_client\\pages\\guests\\signin.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{735938EB-A477-484B-B4A8-E7DDA8058757}|..\\DTNC_Client\\DTNC_Client.csproj|f:\\dtnc\\dtnc_client\\pages\\guests\\product.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{735938EB-A477-484B-B4A8-E7DDA8058757}|..\\DTNC_Client\\DTNC_Client.csproj|f:\\dtnc\\dtnc_client\\pages\\guests\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{735938EB-A477-484B-B4A8-E7DDA8058757}|..\\DTNC_Client\\DTNC_Client.csproj|f:\\dtnc\\dtnc_client\\pages\\guests\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{735938EB-A477-484B-B4A8-E7DDA8058757}|..\\DTNC_Client\\DTNC_Client.csproj|f:\\dtnc\\dtnc_client\\pages\\config\\redirectlogin.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{735938EB-A477-484B-B4A8-E7DDA8058757}|..\\DTNC_Client\\DTNC_Client.csproj|f:\\dtnc\\dtnc_client\\pages\\config\\fetchdata.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{735938EB-A477-484B-B4A8-E7DDA8058757}|..\\DTNC_Client\\DTNC_Client.csproj|f:\\dtnc\\dtnc_client\\pages\\config\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{735938EB-A477-484B-B4A8-E7DDA8058757}|..\\DTNC_Client\\DTNC_Client.csproj|f:\\dtnc\\dtnc_client\\pages\\config\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{735938EB-A477-484B-B4A8-E7DDA8058757}|..\\DTNC_Client\\DTNC_Client.csproj|f:\\dtnc\\dtnc_client\\pages\\config\\_host.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{735938EB-A477-484B-B4A8-E7DDA8058757}|..\\DTNC_Client\\DTNC_Client.csproj|f:\\dtnc\\dtnc_client\\pages\\admin\\userlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{735938EB-A477-484B-B4A8-E7DDA8058757}|..\\DTNC_Client\\DTNC_Client.csproj|f:\\dtnc\\dtnc_client\\pages\\admin\\product.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{735938EB-A477-484B-B4A8-E7DDA8058757}|..\\DTNC_Client\\DTNC_Client.csproj|f:\\dtnc\\dtnc_client\\pages\\admin\\mainlayoutadmin.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{735938EB-A477-484B-B4A8-E7DDA8058757}|..\\DTNC_Client\\DTNC_Client.csproj|f:\\dtnc\\dtnc_client\\pages\\admin\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{735938EB-A477-484B-B4A8-E7DDA8058757}|..\\DTNC_Client\\DTNC_Client.csproj|f:\\dtnc\\dtnc_client\\pages\\admin\\edituser.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{735938EB-A477-484B-B4A8-E7DDA8058757}|..\\DTNC_Client\\DTNC_Client.csproj|f:\\dtnc\\dtnc_client\\pages\\admin\\editfood.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{735938EB-A477-484B-B4A8-E7DDA8058757}|..\\DTNC_Client\\DTNC_Client.csproj|f:\\dtnc\\dtnc_client\\pages\\admin\\createuser.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{735938EB-A477-484B-B4A8-E7DDA8058757}|..\\DTNC_Client\\DTNC_Client.csproj|f:\\dtnc\\dtnc_client\\pages\\admin\\createfood.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{735938EB-A477-484B-B4A8-E7DDA8058757}|..\\DTNC_Client\\DTNC_Client.csproj|f:\\dtnc\\dtnc_client\\shared\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{735938EB-A477-484B-B4A8-E7DDA8058757}|..\\DTNC_Client\\DTNC_Client.csproj|f:\\dtnc\\dtnc_client\\services\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{735938EB-A477-484B-B4A8-E7DDA8058757}|..\\DTNC_Client\\DTNC_Client.csproj|f:\\dtnc\\dtnc_client\\pages\\admin\\deleteuser.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{735938EB-A477-484B-B4A8-E7DDA8058757}|..\\DTNC_Client\\DTNC_Client.csproj|f:\\dtnc\\dtnc_client\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{735938EB-A477-484B-B4A8-E7DDA8058757}|..\\DTNC_Client\\DTNC_Client.csproj|f:\\dtnc\\dtnc_client\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{735938EB-A477-484B-B4A8-E7DDA8058757}|..\\DTNC_Client\\DTNC_Client.csproj|f:\\dtnc\\dtnc_client\\wwwroot\\css\\nav.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{735938EB-A477-484B-B4A8-E7DDA8058757}|..\\DTNC_Client\\DTNC_Client.csproj|f:\\dtnc\\dtnc_client\\shared\\mainlayout.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06ACD656-74FB-4E0D-9696-42C154E06945}|DuAn_DTNC.csproj|f:\\dtnc\\duan_dtnc\\duan_dtnc.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{06ACD656-74FB-4E0D-9696-42C154E06945}|DuAn_DTNC.csproj|solutionrelative:duan_dtnc.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06ACD656-74FB-4E0D-9696-42C154E06945}|DuAn_DTNC.csproj|f:\\dtnc\\duan_dtnc\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06ACD656-74FB-4E0D-9696-42C154E06945}|DuAn_DTNC.csproj|solutionrelative:weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06ACD656-74FB-4E0D-9696-42C154E06945}|DuAn_DTNC.csproj|f:\\dtnc\\duan_dtnc\\migrations\\20241109143357_addoderitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06ACD656-74FB-4E0D-9696-42C154E06945}|DuAn_DTNC.csproj|solutionrelative:migrations\\20241109143357_addoderitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06ACD656-74FB-4E0D-9696-42C154E06945}|DuAn_DTNC.csproj|f:\\dtnc\\duan_dtnc\\migrations\\20241109143212_dtnccontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06ACD656-74FB-4E0D-9696-42C154E06945}|DuAn_DTNC.csproj|solutionrelative:migrations\\20241109143212_dtnccontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 616,
+          "SelectedChildIndex": 16,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{ca8cc5c7-0231-406a-95cd-aa5ed6ac0190}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FoodItem.cs",
+              "DocumentMoniker": "F:\\DTNC\\DuAn_DTNC\\Models\\FoodItem.cs",
+              "RelativeDocumentMoniker": "Models\\FoodItem.cs",
+              "ToolTip": "F:\\DTNC\\DuAn_DTNC\\Models\\FoodItem.cs",
+              "RelativeToolTip": "Models\\FoodItem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T14:18:50.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginToken.cs",
+              "DocumentMoniker": "F:\\DTNC\\DuAn_DTNC\\Models\\LoginToken.cs",
+              "RelativeDocumentMoniker": "Models\\LoginToken.cs",
+              "ToolTip": "F:\\DTNC\\DuAn_DTNC\\Models\\LoginToken.cs",
+              "RelativeToolTip": "Models\\LoginToken.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T14:26:11.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Order.cs",
+              "DocumentMoniker": "F:\\DTNC\\DuAn_DTNC\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "Models\\Order.cs",
+              "ToolTip": "F:\\DTNC\\DuAn_DTNC\\Models\\Order.cs",
+              "RelativeToolTip": "Models\\Order.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T14:18:56.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "F:\\DTNC\\DuAn_DTNC\\Models\\OrderItem.cs",
+              "RelativeDocumentMoniker": "Models\\OrderItem.cs",
+              "ToolTip": "F:\\DTNC\\DuAn_DTNC\\Models\\OrderItem.cs",
+              "RelativeToolTip": "Models\\OrderItem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T14:19:00.671Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "User.cs",
+              "DocumentMoniker": "F:\\DTNC\\DuAn_DTNC\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "F:\\DTNC\\DuAn_DTNC\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T14:19:03.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\DTNC\\DuAn_DTNC\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "F:\\DTNC\\DuAn_DTNC\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAMAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T09:43:40.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\DTNC\\DTNC_Client\\Program.cs",
+              "RelativeDocumentMoniker": "..\\DTNC_Client\\Program.cs",
+              "ToolTip": "F:\\DTNC\\DTNC_Client\\Program.cs",
+              "RelativeToolTip": "..\\DTNC_Client\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC0AAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T11:47:00.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "F:\\DTNC\\DuAn_DTNC\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "F:\\DTNC\\DuAn_DTNC\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-09T14:25:24.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CustomAuthentication.cs",
+              "DocumentMoniker": "F:\\DTNC\\DTNC_Client\\Providers\\CustomAuthentication.cs",
+              "RelativeDocumentMoniker": "..\\DTNC_Client\\Providers\\CustomAuthentication.cs",
+              "ToolTip": "F:\\DTNC\\DTNC_Client\\Providers\\CustomAuthentication.cs",
+              "RelativeToolTip": "..\\DTNC_Client\\Providers\\CustomAuthentication.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T12:07:30.657Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DTNCDbContext.cs",
+              "DocumentMoniker": "F:\\DTNC\\DuAn_DTNC\\Models\\DTNCDbContext.cs",
+              "RelativeDocumentMoniker": "Models\\DTNCDbContext.cs",
+              "ToolTip": "F:\\DTNC\\DuAn_DTNC\\Models\\DTNCDbContext.cs",
+              "RelativeToolTip": "Models\\DTNCDbContext.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAUwBYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T14:19:49.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ComboFoodItems.cs",
+              "DocumentMoniker": "F:\\DTNC\\DuAn_DTNC\\Models\\ComboFoodItems.cs",
+              "RelativeDocumentMoniker": "Models\\ComboFoodItems.cs",
+              "ToolTip": "F:\\DTNC\\DuAn_DTNC\\Models\\ComboFoodItems.cs",
+              "RelativeToolTip": "Models\\ComboFoodItems.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T14:18:29.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Combo.cs",
+              "DocumentMoniker": "F:\\DTNC\\DuAn_DTNC\\Models\\Combo.cs",
+              "RelativeDocumentMoniker": "Models\\Combo.cs",
+              "ToolTip": "F:\\DTNC\\DuAn_DTNC\\Models\\Combo.cs",
+              "RelativeToolTip": "Models\\Combo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T14:18:25.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "F:\\DTNC\\DuAn_DTNC\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "Controllers\\WeatherForecastController.cs",
+              "ToolTip": "F:\\DTNC\\DuAn_DTNC\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "Controllers\\WeatherForecastController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T09:43:55.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "F:\\DTNC\\DuAn_DTNC\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
+              "ToolTip": "F:\\DTNC\\DuAn_DTNC\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Controllers\\UsersController.cs",
+              "ViewState": "AQIAAHQAAAAAAAAAAAAAwIUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T14:41:12.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "TokenController.cs",
+              "DocumentMoniker": "F:\\DTNC\\DuAn_DTNC\\Controllers\\TokenController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TokenController.cs",
+              "ToolTip": "F:\\DTNC\\DuAn_DTNC\\Controllers\\TokenController.cs",
+              "RelativeToolTip": "Controllers\\TokenController.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAYwDwAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T14:45:42.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "OrderItemsController.cs",
+              "DocumentMoniker": "F:\\DTNC\\DuAn_DTNC\\Controllers\\OrderItemsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OrderItemsController.cs",
+              "ToolTip": "F:\\DTNC\\DuAn_DTNC\\Controllers\\OrderItemsController.cs",
+              "RelativeToolTip": "Controllers\\OrderItemsController.cs",
+              "ViewState": "AQIAAFsAAAAAAAAAAAAAAAgAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T14:45:35.32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "FoodItemsController.cs",
+              "DocumentMoniker": "F:\\DTNC\\DuAn_DTNC\\Controllers\\FoodItemsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\FoodItemsController.cs",
+              "ToolTip": "F:\\DTNC\\DuAn_DTNC\\Controllers\\FoodItemsController.cs",
+              "RelativeToolTip": "Controllers\\FoodItemsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T14:47:19.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "FoodController.cs",
+              "DocumentMoniker": "F:\\DTNC\\DuAn_DTNC\\Controllers\\FoodController.cs",
+              "RelativeDocumentMoniker": "Controllers\\FoodController.cs",
+              "ToolTip": "F:\\DTNC\\DuAn_DTNC\\Controllers\\FoodController.cs",
+              "RelativeToolTip": "Controllers\\FoodController.cs",
+              "ViewState": "AQIAAE0AAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T14:40:38.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ComboesController.cs",
+              "DocumentMoniker": "F:\\DTNC\\DuAn_DTNC\\Controllers\\ComboesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ComboesController.cs",
+              "ToolTip": "F:\\DTNC\\DuAn_DTNC\\Controllers\\ComboesController.cs",
+              "RelativeToolTip": "Controllers\\ComboesController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAEsAAABjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T14:37:11.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Index.razor",
+              "DocumentMoniker": "F:\\DTNC\\DTNC_Client\\Pages\\User\\Index.razor",
+              "RelativeDocumentMoniker": "..\\DTNC_Client\\Pages\\User\\Index.razor",
+              "ToolTip": "F:\\DTNC\\DTNC_Client\\Pages\\User\\Index.razor",
+              "RelativeToolTip": "..\\DTNC_Client\\Pages\\User\\Index.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-11T12:08:23.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Edituser.razor",
+              "DocumentMoniker": "F:\\DTNC\\DTNC_Client\\Pages\\User\\Edituser.razor",
+              "RelativeDocumentMoniker": "..\\DTNC_Client\\Pages\\User\\Edituser.razor",
+              "ToolTip": "F:\\DTNC\\DTNC_Client\\Pages\\User\\Edituser.razor",
+              "RelativeToolTip": "..\\DTNC_Client\\Pages\\User\\Edituser.razor",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAAAEAAAABZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-11T12:08:16.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "SigninLayout.razor",
+              "DocumentMoniker": "F:\\DTNC\\DTNC_Client\\Pages\\Guests\\SigninLayout.razor",
+              "RelativeDocumentMoniker": "..\\DTNC_Client\\Pages\\Guests\\SigninLayout.razor",
+              "ToolTip": "F:\\DTNC\\DTNC_Client\\Pages\\Guests\\SigninLayout.razor",
+              "RelativeToolTip": "..\\DTNC_Client\\Pages\\Guests\\SigninLayout.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-11T12:08:03.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Signin.razor",
+              "DocumentMoniker": "F:\\DTNC\\DTNC_Client\\Pages\\Guests\\Signin.razor",
+              "RelativeDocumentMoniker": "..\\DTNC_Client\\Pages\\Guests\\Signin.razor",
+              "ToolTip": "F:\\DTNC\\DTNC_Client\\Pages\\Guests\\Signin.razor",
+              "RelativeToolTip": "..\\DTNC_Client\\Pages\\Guests\\Signin.razor",
+              "ViewState": "AQIAAIEAAAAAAAAAAAAAANcAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-11T12:07:07.013Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Product.razor",
+              "DocumentMoniker": "F:\\DTNC\\DTNC_Client\\Pages\\Guests\\Product.razor",
+              "RelativeDocumentMoniker": "..\\DTNC_Client\\Pages\\Guests\\Product.razor",
+              "ToolTip": "F:\\DTNC\\DTNC_Client\\Pages\\Guests\\Product.razor",
+              "RelativeToolTip": "..\\DTNC_Client\\Pages\\Guests\\Product.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-11T11:52:43.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Index.razor",
+              "DocumentMoniker": "F:\\DTNC\\DTNC_Client\\Pages\\Guests\\Index.razor",
+              "RelativeDocumentMoniker": "..\\DTNC_Client\\Pages\\Guests\\Index.razor",
+              "ToolTip": "F:\\DTNC\\DTNC_Client\\Pages\\Guests\\Index.razor",
+              "RelativeToolTip": "..\\DTNC_Client\\Pages\\Guests\\Index.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-11T11:47:49.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Home.razor",
+              "DocumentMoniker": "F:\\DTNC\\DTNC_Client\\Pages\\Guests\\Home.razor",
+              "RelativeDocumentMoniker": "..\\DTNC_Client\\Pages\\Guests\\Home.razor",
+              "ToolTip": "F:\\DTNC\\DTNC_Client\\Pages\\Guests\\Home.razor",
+              "RelativeToolTip": "..\\DTNC_Client\\Pages\\Guests\\Home.razor",
+              "ViewState": "AQIAACsAAAAAAAAAAAAAAB0AAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-11T11:52:35.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "RedirectLogin.razor",
+              "DocumentMoniker": "F:\\DTNC\\DTNC_Client\\Pages\\Config\\RedirectLogin.razor",
+              "RelativeDocumentMoniker": "..\\DTNC_Client\\Pages\\Config\\RedirectLogin.razor",
+              "ToolTip": "F:\\DTNC\\DTNC_Client\\Pages\\Config\\RedirectLogin.razor",
+              "RelativeToolTip": "..\\DTNC_Client\\Pages\\Config\\RedirectLogin.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-11T12:07:00.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "FetchData.razor",
+              "DocumentMoniker": "F:\\DTNC\\DTNC_Client\\Pages\\Config\\FetchData.razor",
+              "RelativeDocumentMoniker": "..\\DTNC_Client\\Pages\\Config\\FetchData.razor",
+              "ToolTip": "F:\\DTNC\\DTNC_Client\\Pages\\Config\\FetchData.razor",
+              "RelativeToolTip": "..\\DTNC_Client\\Pages\\Config\\FetchData.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-11T12:06:58.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "F:\\DTNC\\DTNC_Client\\Pages\\Config\\Error.cshtml",
+              "RelativeDocumentMoniker": "..\\DTNC_Client\\Pages\\Config\\Error.cshtml",
+              "ToolTip": "F:\\DTNC\\DTNC_Client\\Pages\\Config\\Error.cshtml",
+              "RelativeToolTip": "..\\DTNC_Client\\Pages\\Config\\Error.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-11T12:06:59.131Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Counter.razor",
+              "DocumentMoniker": "F:\\DTNC\\DTNC_Client\\Pages\\Config\\Counter.razor",
+              "RelativeDocumentMoniker": "..\\DTNC_Client\\Pages\\Config\\Counter.razor",
+              "ToolTip": "F:\\DTNC\\DTNC_Client\\Pages\\Config\\Counter.razor",
+              "RelativeToolTip": "..\\DTNC_Client\\Pages\\Config\\Counter.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-11T12:06:56.855Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "_Host.cshtml",
+              "DocumentMoniker": "F:\\DTNC\\DTNC_Client\\Pages\\Config\\_Host.cshtml",
+              "RelativeDocumentMoniker": "..\\DTNC_Client\\Pages\\Config\\_Host.cshtml",
+              "ToolTip": "F:\\DTNC\\DTNC_Client\\Pages\\Config\\_Host.cshtml",
+              "RelativeToolTip": "..\\DTNC_Client\\Pages\\Config\\_Host.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-11T11:52:32.448Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "UserList.razor",
+              "DocumentMoniker": "F:\\DTNC\\DTNC_Client\\Pages\\Admin\\UserList.razor",
+              "RelativeDocumentMoniker": "..\\DTNC_Client\\Pages\\Admin\\UserList.razor",
+              "ToolTip": "F:\\DTNC\\DTNC_Client\\Pages\\Admin\\UserList.razor",
+              "RelativeToolTip": "..\\DTNC_Client\\Pages\\Admin\\UserList.razor",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAAADMAAABcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-11T11:52:24.44Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Product.razor",
+              "DocumentMoniker": "F:\\DTNC\\DTNC_Client\\Pages\\Admin\\Product.razor",
+              "RelativeDocumentMoniker": "..\\DTNC_Client\\Pages\\Admin\\Product.razor",
+              "ToolTip": "F:\\DTNC\\DTNC_Client\\Pages\\Admin\\Product.razor",
+              "RelativeToolTip": "..\\DTNC_Client\\Pages\\Admin\\Product.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADUAAABcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-11T11:52:15.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "MainLayoutAdmin.razor",
+              "DocumentMoniker": "F:\\DTNC\\DTNC_Client\\Pages\\Admin\\MainLayoutAdmin.razor",
+              "RelativeDocumentMoniker": "..\\DTNC_Client\\Pages\\Admin\\MainLayoutAdmin.razor",
+              "ToolTip": "F:\\DTNC\\DTNC_Client\\Pages\\Admin\\MainLayoutAdmin.razor",
+              "RelativeToolTip": "..\\DTNC_Client\\Pages\\Admin\\MainLayoutAdmin.razor",
+              "ViewState": "AQIAAGMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-11T11:52:13.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Index.razor",
+              "DocumentMoniker": "F:\\DTNC\\DTNC_Client\\Pages\\Admin\\Index.razor",
+              "RelativeDocumentMoniker": "..\\DTNC_Client\\Pages\\Admin\\Index.razor",
+              "ToolTip": "F:\\DTNC\\DTNC_Client\\Pages\\Admin\\Index.razor",
+              "RelativeToolTip": "..\\DTNC_Client\\Pages\\Admin\\Index.razor",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAE4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-11T11:52:07.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Edituser.razor",
+              "DocumentMoniker": "F:\\DTNC\\DTNC_Client\\Pages\\Admin\\Edituser.razor",
+              "RelativeDocumentMoniker": "..\\DTNC_Client\\Pages\\Admin\\Edituser.razor",
+              "ToolTip": "F:\\DTNC\\DTNC_Client\\Pages\\Admin\\Edituser.razor",
+              "RelativeToolTip": "..\\DTNC_Client\\Pages\\Admin\\Edituser.razor",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAACwAAABZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-11T11:52:01.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "EditFood.razor",
+              "DocumentMoniker": "F:\\DTNC\\DTNC_Client\\Pages\\Admin\\EditFood.razor",
+              "RelativeDocumentMoniker": "..\\DTNC_Client\\Pages\\Admin\\EditFood.razor",
+              "ToolTip": "F:\\DTNC\\DTNC_Client\\Pages\\Admin\\EditFood.razor",
+              "RelativeToolTip": "..\\DTNC_Client\\Pages\\Admin\\EditFood.razor",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAADEAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-11T11:51:55.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "CreateUser.razor",
+              "DocumentMoniker": "F:\\DTNC\\DTNC_Client\\Pages\\Admin\\CreateUser.razor",
+              "RelativeDocumentMoniker": "..\\DTNC_Client\\Pages\\Admin\\CreateUser.razor",
+              "ToolTip": "F:\\DTNC\\DTNC_Client\\Pages\\Admin\\CreateUser.razor",
+              "RelativeToolTip": "..\\DTNC_Client\\Pages\\Admin\\CreateUser.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADIAAABdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-11T11:51:39.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "CreateFood.razor",
+              "DocumentMoniker": "F:\\DTNC\\DTNC_Client\\Pages\\Admin\\CreateFood.razor",
+              "RelativeDocumentMoniker": "..\\DTNC_Client\\Pages\\Admin\\CreateFood.razor",
+              "ToolTip": "F:\\DTNC\\DTNC_Client\\Pages\\Admin\\CreateFood.razor",
+              "RelativeToolTip": "..\\DTNC_Client\\Pages\\Admin\\CreateFood.razor",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAADQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-11T11:51:22.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "F:\\DTNC\\DTNC_Client\\Shared\\MainLayout.razor",
+              "RelativeDocumentMoniker": "..\\DTNC_Client\\Shared\\MainLayout.razor",
+              "ToolTip": "F:\\DTNC\\DTNC_Client\\Shared\\MainLayout.razor",
+              "RelativeToolTip": "..\\DTNC_Client\\Shared\\MainLayout.razor",
+              "ViewState": "AQIAABIAAAAAAAAAAAAIwCoAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-11T08:17:49.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "CartService.cs",
+              "DocumentMoniker": "F:\\DTNC\\DTNC_Client\\Services\\CartService.cs",
+              "RelativeDocumentMoniker": "..\\DTNC_Client\\Services\\CartService.cs",
+              "ToolTip": "F:\\DTNC\\DTNC_Client\\Services\\CartService.cs",
+              "RelativeToolTip": "..\\DTNC_Client\\Services\\CartService.cs",
+              "ViewState": "AQIAAI4AAAAAAAAAAIBZwJEAAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T11:53:28.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Deleteuser.razor",
+              "DocumentMoniker": "F:\\DTNC\\DTNC_Client\\Pages\\Admin\\Deleteuser.razor",
+              "RelativeDocumentMoniker": "..\\DTNC_Client\\Pages\\Admin\\Deleteuser.razor",
+              "ToolTip": "F:\\DTNC\\DTNC_Client\\Pages\\Admin\\Deleteuser.razor",
+              "RelativeToolTip": "..\\DTNC_Client\\Pages\\Admin\\Deleteuser.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAABcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-11T11:51:48.69Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "App.razor",
+              "DocumentMoniker": "F:\\DTNC\\DTNC_Client\\App.razor",
+              "RelativeDocumentMoniker": "..\\DTNC_Client\\App.razor",
+              "ToolTip": "F:\\DTNC\\DTNC_Client\\App.razor",
+              "RelativeToolTip": "..\\DTNC_Client\\App.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAIwAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-11T08:30:15.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "MainLayout.razor.css",
+              "DocumentMoniker": "F:\\DTNC\\DTNC_Client\\Shared\\MainLayout.razor.css",
+              "RelativeDocumentMoniker": "..\\DTNC_Client\\Shared\\MainLayout.razor.css",
+              "ToolTip": "F:\\DTNC\\DTNC_Client\\Shared\\MainLayout.razor.css",
+              "RelativeToolTip": "..\\DTNC_Client\\Shared\\MainLayout.razor.css",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAmwEAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-11T08:23:05.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "nav.css",
+              "DocumentMoniker": "F:\\DTNC\\DTNC_Client\\wwwroot\\css\\nav.css",
+              "RelativeDocumentMoniker": "..\\DTNC_Client\\wwwroot\\css\\nav.css",
+              "ToolTip": "F:\\DTNC\\DTNC_Client\\wwwroot\\css\\nav.css",
+              "RelativeToolTip": "..\\DTNC_Client\\wwwroot\\css\\nav.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-11T08:21:03.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "site.css",
+              "DocumentMoniker": "F:\\DTNC\\DTNC_Client\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "..\\DTNC_Client\\wwwroot\\css\\site.css",
+              "ToolTip": "F:\\DTNC\\DTNC_Client\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "..\\DTNC_Client\\wwwroot\\css\\site.css",
+              "ViewState": "AQIAAAoDAAAAAAAAAAAmwCkDAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-11T08:20:46.937Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "20241109143357_AddOderItems.cs",
+              "DocumentMoniker": "F:\\DTNC\\DuAn_DTNC\\Migrations\\20241109143357_AddOderItems.cs",
+              "RelativeDocumentMoniker": "Migrations\\20241109143357_AddOderItems.cs",
+              "ToolTip": "F:\\DTNC\\DuAn_DTNC\\Migrations\\20241109143357_AddOderItems.cs",
+              "RelativeToolTip": "Migrations\\20241109143357_AddOderItems.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T14:33:58.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "20241109143212_DTNCContext.cs",
+              "DocumentMoniker": "F:\\DTNC\\DuAn_DTNC\\Migrations\\20241109143212_DTNCContext.cs",
+              "RelativeDocumentMoniker": "Migrations\\20241109143212_DTNCContext.cs",
+              "ToolTip": "F:\\DTNC\\DuAn_DTNC\\Migrations\\20241109143212_DTNCContext.cs",
+              "RelativeToolTip": "Migrations\\20241109143212_DTNCContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T14:32:12.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "DuAn_DTNC.http",
+              "DocumentMoniker": "F:\\DTNC\\DuAn_DTNC\\DuAn_DTNC.http",
+              "RelativeDocumentMoniker": "DuAn_DTNC.http",
+              "ToolTip": "F:\\DTNC\\DuAn_DTNC\\DuAn_DTNC.http",
+              "RelativeToolTip": "DuAn_DTNC.http",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-11-09T14:28:28.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "F:\\DTNC\\DuAn_DTNC\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "WeatherForecast.cs",
+              "ToolTip": "F:\\DTNC\\DuAn_DTNC\\WeatherForecast.cs",
+              "RelativeToolTip": "WeatherForecast.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T09:43:37.389Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

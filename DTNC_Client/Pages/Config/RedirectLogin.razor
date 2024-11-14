@@ -1,0 +1,27 @@
+﻿@page "/redirect"
+@inject NavigationManager NavigationManager
+@inject AuthenticationStateProvider AuthenticationStateProvider
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+
+        if (user.Identity.IsAuthenticated)
+        {
+            if (user.IsInRole("admin"))
+            {
+                NavigationManager.NavigateTo("/product");
+            }
+            else
+            {
+                NavigationManager.NavigateTo("/index");
+            }
+        }
+        else
+        {
+            NavigationManager.NavigateTo("/login");
+        }
+    }
+}

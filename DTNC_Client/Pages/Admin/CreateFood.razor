@@ -1,0 +1,71 @@
+﻿@page "/createfoodadmin"
+@attribute [Authorize(Roles = "admin")]
+@using DuAn_DTNC.Models
+@inject HttpClient Http
+@inject IJSRuntime JS
+@inject NavigationManager NavigationManager
+
+
+<h1>Create</h1>
+
+
+<form>
+    <div class="form-group">
+        <label for="name">Tên sản phẩm</label>
+        <input type="text" id="name" @bind="foodItem.Name" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="description">Mô tả</label>
+        <input type="text" id="description" @bind="foodItem.Description" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="price">Giá</label>
+        <input type="number" id="price" @bind="foodItem.Price" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="category">Loại</label>
+        <input type="text" id="category" @bind="foodItem.Category" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="imageUrl">Url hình ảnh</label>
+        <input type="text" id="imageUrl" @bind="foodItem.ImageUrl" class="form-control" />
+    </div>
+    <div class="form-group-button">
+        <input type="button" value="Create" @onclick="CreateFoodItem" class="btn btn-primary" />
+    </div>
+</form>
+
+@code {
+    private FoodItem foodItem = new FoodItem();
+
+    private async Task CreateFoodItem()
+    {
+        var token = await JS.InvokeAsync<string>("localStorage.getItem", "token");
+
+        if (!string.IsNullOrEmpty(token))
+        {
+            var request = new HttpRequestMessage(HttpMethod.Post, "https://localhost:7193/api/FoodItems")
+                {
+                    Content = JsonContent.Create(foodItem)
+                };
+            request.Headers.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
+
+            var response = await Http.SendAsync(request);
+
+            if (response.IsSuccessStatusCode)
+            {
+                NavigationManager.NavigateTo("/listfood");
+            }
+            else
+            {
+                Console.WriteLine($"Failed to create item. Status code: {response.StatusCode}");
+            }
+        }
+        else
+        {
+            Console.WriteLine("Token not found. Please login again.");
+            NavigationManager.NavigateTo("/signin");
+        }
+    }
+}
+

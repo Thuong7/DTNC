@@ -1,0 +1,102 @@
+﻿@page "/listfood"
+@using DuAn_DTNC.Models
+@layout MainLayoutAdmin
+@attribute [Authorize(Roles = "admin")]
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JS
+
+<h3>Food Items List</h3>
+<h4><a href="createfoodadmin">Create Food Item</a></h4>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Category</th>
+            <th>Image</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (foodItems != null)
+        {
+            @foreach (var item in foodItems)
+            {
+                <tr>
+                    <td>@item.Name</td>
+                    <td>@item.Description</td>
+                    <td>@item.Price</td>
+                    <td>@item.Category</td>
+                    <td><img src="@item.ImageUrl" alt="Food Image" style="width: 100px;" /></td>
+                    <td>
+                        <button @onclick="() => EditFoodItem(item.Id)" class="btn btn-primary">Edit</button>
+                        <button @onclick="() => DeleteFoodItem(item.Id)" class="btn btn-danger">Delete</button>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
+@code {
+    private List<FoodItem> foodItems;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var token = await JS.InvokeAsync<string>("localStorage.getItem", "token");
+
+        if (!string.IsNullOrEmpty(token))
+        {
+            try
+            {
+                var request = new HttpRequestMessage(HttpMethod.Get, "https://localhost:7193/api/FoodItems");
+                request.Headers.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
+
+                var response = await Http.SendAsync(request);
+                if (response.IsSuccessStatusCode)
+                {
+                    foodItems = await response.Content.ReadFromJsonAsync<List<FoodItem>>();
+                }
+                else
+                {
+                    Console.WriteLine($"Error: {response.StatusCode}");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Request failed: {ex.Message}");
+            }
+        }
+        else
+        {
+            NavigationManager.NavigateTo("/signin");
+        }
+    }
+
+    private void EditFoodItem(int id)
+    {
+        NavigationManager.NavigateTo($"/editfooditem/{id}");
+    }
+
+    private async Task DeleteFoodItem(int id)
+    {
+        var token = await JS.InvokeAsync<string>("localStorage.getItem", "token");
+        if (!string.IsNullOrEmpty(token))
+        {
+            var request = new HttpRequestMessage(HttpMethod.Delete, $"https://localhost:44391/api/FoodItems/{id}");
+            request.Headers.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
+
+            var response = await Http.SendAsync(request);
+            if (response.IsSuccessStatusCode)
+            {
+                foodItems = foodItems.Where(f => f.Id != id).ToList();
+            }
+            else
+            {
+                Console.WriteLine($"Error: {response.StatusCode}");
+            }
+        }
+    }
+}

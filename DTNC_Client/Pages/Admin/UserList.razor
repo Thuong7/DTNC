@@ -1,0 +1,83 @@
+﻿@page "/userslist"
+@using DuAn_DTNC.Models
+@layout MainLayoutAdmin
+@attribute [Authorize(Roles = "admin")]
+@inject IJSRuntime JS
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+
+<h3>User List</h3>
+<h4><a href="createuser">Create User</a></h4>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Full Name</th>
+            <th>Role</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (users != null)
+        {
+            @foreach (var user in users)
+            {
+                <tr>
+                    <td>@user.Username</td>
+                    <td>@user.Email</td>
+                    <td>@user.FullName</td>
+                    <td>@user.Role</td>
+                    <td>
+                        <button @onclick="() => EditUser(user.Username)" class="btn btn-primary">Edit</button>
+                        <a href="/deleteuser/@user.Username" class="btn btn-danger">Delete</a>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
+@code {
+    private List<User> users;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var token = await JS.InvokeAsync<string>("localStorage.getItem", "token");
+
+        if (!string.IsNullOrEmpty(token))
+        {
+            try
+            {
+                var request = new HttpRequestMessage(HttpMethod.Get, "https://localhost:7193/api/Users");
+
+                request.Headers.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
+
+                var response = await Http.SendAsync(request);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    users = await response.Content.ReadFromJsonAsync<List<User>>();
+                }
+                else
+                {
+                    Console.WriteLine($"Error: {response.StatusCode}");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Request failed: {ex.Message}");
+            }
+        }
+        else
+        {
+            Console.WriteLine("No token found");
+            NavigationManager.NavigateTo("/signin");
+        }
+    }
+    private void EditUser(string username)
+    {
+        NavigationManager.NavigateTo($"/edituser/{username}");
+    }
+}
+

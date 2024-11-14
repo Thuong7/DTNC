@@ -1,0 +1,26 @@
+﻿@page "/id"
+@inject IJSRuntime JS
+<PageTitle>Index</PageTitle>
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+<script src="js/JavaScript.js"></script>
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            try
+            {
+                await JS.InvokeVoidAsync("clearToken");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"JavaScript interop error: {ex.Message}");
+            }
+        }
+    }
+}

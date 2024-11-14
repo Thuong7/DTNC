@@ -1,0 +1,45 @@
+﻿@page "/deleteuser/{username}"
+@using DuAn_DTNC.Models
+@layout MainLayoutAdmin
+@attribute [Authorize(Roles = "admin")]
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JS
+
+<h3>Delete User</h3>
+
+<p>Are you sure you want to delete the user @username?</p>
+
+<div>
+    <button class="btn btn-danger" @onclick="DeleteUser">Yes, Delete</button>
+    <button class="btn btn-secondary" @onclick="Cancel">Cancel</button>
+</div>
+
+@code {
+    [Parameter] public string username { get; set; }
+
+    private async Task DeleteUser()
+    {
+        var token = await JS.InvokeAsync<string>("localStorage.getItem", "token");
+        if (!string.IsNullOrEmpty(token))
+        {
+            var request = new HttpRequestMessage(HttpMethod.Delete, $"https://localhost:7193/api/Users/{username}");
+            request.Headers.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
+            var response = await Http.SendAsync(request);
+
+            if (response.IsSuccessStatusCode)
+            {
+                NavigationManager.NavigateTo("/userslist");
+            }
+            else
+            {
+                Console.WriteLine($"Error: {response.StatusCode}");
+            }
+        }
+    }
+
+    private void Cancel()
+    {
+        NavigationManager.NavigateTo("/userslist");
+    }
+}

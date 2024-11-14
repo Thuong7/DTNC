@@ -1,0 +1,95 @@
+﻿@page "/admindashboard"
+@using DuAn_DTNC.Models
+@layout MainLayoutAdmin
+@attribute [Authorize(Roles = "admin")]
+@inject HttpClient Http
+@inject IJSRuntime JS
+@inject NavigationManager NavigationManager
+
+
+<h3>Admin Dashboard</h3>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    <h4>Total Users</h4>
+                </div>
+                <div class="card-body">
+                    <h5>@totalUsers</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    <h4>Active Orders</h4>
+                </div>
+                <div class="card-body">
+                    <h5>@activeOrders</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    <h4>Recent Activity</h4>
+                </div>
+                <div class="card-body">
+                    <ul>
+                        @foreach (var activity in recentActivities)
+                        {
+                            <li>@activity</li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private int totalUsers;
+    private int activeOrders;
+    private List<string> recentActivities = new List<string>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        var token = await JS.InvokeAsync<string>("localStorage.getItem", "token");
+
+        if (!string.IsNullOrEmpty(token))
+        {
+            try
+            {
+                var usersResponse = await Http.GetAsync("https://localhost:7193/api/Users");
+                if (usersResponse.IsSuccessStatusCode)
+                {
+                    var users = await usersResponse.Content.ReadFromJsonAsync<List<User>>();
+                    totalUsers = users.Count;
+                }
+
+                var ordersResponse = await Http.GetAsync("https://localhost:44391/api/Orders");
+                if (ordersResponse.IsSuccessStatusCode)
+                {
+                    var orders = await ordersResponse.Content.ReadFromJsonAsync<List<Order>>();
+                    activeOrders = orders.Count(o => o.Status == "In-Progress");
+                }
+
+                var activityResponse = await Http.GetAsync("https://localhost:44391/api/Activities");
+                if (activityResponse.IsSuccessStatusCode)
+                {
+                    recentActivities = await activityResponse.Content.ReadFromJsonAsync<List<string>>();
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Request failed: {ex.Message}");
+            }
+        }
+        else
+        {
+            NavigationManager.NavigateTo("/signin");
+        }
+    }
+}
