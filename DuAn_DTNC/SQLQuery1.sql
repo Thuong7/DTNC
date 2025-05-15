@@ -137,3 +137,10 @@ WHERE
     c.Name = 'Combo 5'
     AND f.Name IN ('Sushi', 'Coca-Cola', 'Orange Juice');
 
+
+
+
+insert into Users (Username, Password,Role,Email,FullName)
+values ('admin11', '123', 'admin','haha@gmail.com','admin')
+
+select * from Users

@@ -142,3 +142,5 @@ F:\DTNC\DuAn_DTNC\obj\Debug\net8.0\DuAn_DTNC.genruntimeconfig.cache
 F:\DTNC\DuAn_DTNC\obj\Debug\net8.0\ref\DuAn_DTNC.dll
 F:\DTNC\DuAn_DTNC\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 F:\DTNC\DuAn_DTNC\bin\Debug\net8.0\Newtonsoft.Json.dll
+F:\DTNC\DuAn_DTNC\bin\Debug\net8.0\Microsoft.Bcl.TimeProvider.dll
+F:\DTNC\DuAn_DTNC\obj\Debug\net8.0\DuAn_DTNC.sourcelink.json

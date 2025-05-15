@@ -82,8 +82,8 @@ namespace DuAn_DTNC.Controllers
             return NoContent();
         }
         //[Authorize]
-        // POST: api/Users
-        [Authorize(Roles = "admin")]
+        //POST: api/Users
+        //[Authorize(Roles = "admin")]
         [HttpPost]
         public async Task<ActionResult<User>> PostUser(User user)
         {
@@ -137,15 +137,7 @@ namespace DuAn_DTNC.Controllers
         public async Task<IActionResult> LoginApi([FromBody] LoginModel model)
         {
             var user = await _context.Users.SingleOrDefaultAsync(u => u.Username == model.Username);
-            if (user == null)
-            {
-                return Unauthorized(new { Message = "Invalid credentials" });
-            }
-
-            var passwordHasher = new PasswordHasher<User>();
-            var result = passwordHasher.VerifyHashedPassword(user, user.Password, model.Password);
-
-            if (result == PasswordVerificationResult.Failed)
+            if (user == null || user.Password != model.Password)
             {
                 return Unauthorized(new { Message = "Invalid credentials" });
             }
